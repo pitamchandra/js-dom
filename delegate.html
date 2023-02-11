@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>explore delegate </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="secret.html">secret</a></li>
+            <li><a href="bubble.html">bubble</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <h1>explore delegate</h1>
+        <ol id="list">
+            <li class="item">Lorem ipsum dolor sit amet.</li>
+            <li class="item">Lorem ipsum dolor sit amet.</li>
+            <li class="item">Lorem ipsum dolor sit amet.</li>
+            <li class="item">Lorem ipsum dolor sit amet.</li>
+            <li class="item">Lorem ipsum dolor sit amet.</li>
+            <li class="item">Lorem ipsum dolor sit amet.</li>
+            
+        </ol>
+<br>
+        <button id="add-btn">add new</button>
+    </main>
+
+
+    <script>
+        // const items = document.getElementsByClassName('item');
+        // for (const item of items){
+        //     item.addEventListener('click', function(event){
+        //         event.target.parentNode.removeChild(event.target)
+        //     })
+        // }
+        document.getElementById('list').addEventListener('click', function(event){
+            event.target.parentNode.removeChild(event.target)
+        })
+
+        document.getElementById('add-btn').addEventListener('click', function(){
+            const list = document.getElementById('list');
+            const li = document.createElement('li');
+            li.innerHTML = "brand new item added";
+            li.classList.add('item')
+            list.appendChild(li);
+        })
+
+    </script>
+</body>
+</html>

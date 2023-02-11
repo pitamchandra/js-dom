@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript event </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="secret.html">secret</a></li>
+            <li><a href="bubble.html">bubble</a></li>
+            <li><a href="delegate.html">delegate</a></li>
+        </ul>
+    </nav>
+    <h1 title="I am fine, thanks">hello javascript ! How are you?</h1>
+    <button onclick="console.log('I am well')">how are you?</button> <br> <br>
+    <!-- option 1 -->
+    <button onclick="document.body.style.backgroundColor = 'skyblue'">body bg yellow</button>
+    <!-- option 2 best option -->
+    <button onclick="whiteBg()">body bg white</button>
+    <!-- option 3 -->
+    <button id="blueBg">body bg blue</button>
+    <!-- final option -->
+    <button id="pinkBg">body bg pink</button>
+    <br><br>
+
+    <p id="update_text">Default Text</p>
+
+    <input type="text" id="input">
+    <button id="update_btn">update btn</button>
+
+    <section id="comment_area">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit perferendis illo aliquid earum error ipsam libero doloribus alias ex sequi fugiat, saepe rerum expedita, iure itaque. Excepturi consequuntur, impedit aliquid reprehenderit quaerat quis sed eligendi asperiores numquam debitis vero aut accusamus dolor facilis nihil nulla.</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit perferendis illo aliquid earum error ipsam libero doloribus alias ex sequi fugiat, saepe rerum expedita, iure itaque. Excepturi consequuntur, impedit aliquid reprehenderit quaerat quis sed eligendi asperiores numquam debitis vero aut accusamus dolor facilis nihil nulla.</p>
+    </section>
+    <div>
+        <textarea name="" id="comment_box" cols="60" rows="5"></textarea><br><br>
+
+        <button id="post_btn">post</button>
+    </div>
+
+
+    <!-- js link start from here -->
+    <script src="js/event.js"></script>
+</body>
+</html>
